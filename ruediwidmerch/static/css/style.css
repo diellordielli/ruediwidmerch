@@ -308,7 +308,7 @@ h4 {
 }
 
 .textcontent {
-  font-family:'DIN Next W01 Regular';
+font-family:'Bembo W01';
 }
 
 .texttitle {
@@ -325,7 +325,7 @@ h4 {
   padding-top: 25px;
   padding-left: 20px;
   background-color: #DADBDC;
-  font-family:'DIN Next W01 Regular';
+  font-family:'Bembo W01';
 }
 
 .contact {
@@ -389,7 +389,7 @@ h4 {
 
 .eventsingledesc {
   font-size: 13px;
-  font-family:'DIN Next W01 Regular';
+  font-family:'Bembo W01';
 }
 
 .newsarchive {
@@ -460,7 +460,7 @@ h4 {
 
 .newssingledesc {
   margin-bottom: 20px;
-  font-family:'DIN Next W01 Regular';
+  font-family:'Bembo W01';
 }
 
 .newssingleimg img {
@@ -503,7 +503,7 @@ h4 {
   margin-left: 10px;
   display: none;
   padding-bottom: 20px;
-  font-family:'DIN Next W01 Regular';
+  font-family:'Bembo W01';
 }
 
 .isotope,
