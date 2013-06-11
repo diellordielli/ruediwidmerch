@@ -41,72 +41,65 @@
     font-size: 15px;
     text-decoration: none;
     color: #000;
+    margin-left: 35px;
+    font-family:'Vialog LT W01 Light';
+    font-weight: bold;
+    letter-spacing: 1px;
 }
 
 #cartoonimg, #cartoonimgactive {
-  width: 100px;
-  height: 40px;
-  background: url(../../static/img/navhover1.png);
+  position: relative;
   display: inline-block;
-  background-repeat: no-repeat;
+  text-transform: uppercase;
 }
 
 #cartoonimg:hover, #cartoonimgactive {
-  background-position: 0px -55px;
+  color: #D3D3D3;
+  font-weight: bold;
 }
 
 #texteimg, #texteimgactive {
-  width: 100px;
-  height: 40px;
-  background: url(../../static/img/navhover2.png);
+  position: relative;
   display: inline-block;
-  background-repeat: no-repeat;
+  text-transform: uppercase;
 }
 
 #texteimg:hover, #texteimgactive {
-  background-position: 0px -60px;
+  color: #D3D3D3;
+  font-weight: bold;
 }
 
 #newsimg, #newsimgactive {
   position: relative;
-  width: 100px;
-  height: 40px;
-  background: url(../../static/img/navhover3.png);
   display: inline-block;
-  top: 2px;
-  background-repeat: no-repeat;
+  text-transform: uppercase;
 }
 
 #newsimg:hover, #newsimgactive {
-  background-position: 0px -56px;
+  color: #D3D3D3;
+  font-weight: bold;
 }
 
 #portraitimg, #portraitimgactive {
   position: relative;
-  width: 100px;
-  height: 40px;
-  background: url(../../static/img/navhover4.png);
   display: inline-block;
-  top: 2px;
-  background-repeat: no-repeat;
+  text-transform: uppercase;
 }
 
 #portraitimg:hover, #portraitimgactive {
-  background-position: 0px -53px;
+  color: #D3D3D3;
+  font-weight: bold;
 }
 
 #kontaktimg, #kontaktimgactive {
   position: relative;
-  width: 100px;
-  height: 40px;
-  background: url(../../static/img/navhover5.png);
   display: inline-block;
-  top: 2px;
-  background-repeat: no-repeat;
+  text-transform: uppercase;
 }
 
 #kontaktimg:hover, #kontaktimgactive {
-  background-position: 0px -55px;
+  color: #D3D3D3;
+  font-weight: bold;
 }
 
 .item {
@@ -232,6 +225,21 @@
   height: 75px;
 }
 
+.imagetext {
+  position: relative;
+  width: 100%;
+  top: -53px;
+  padding-top: 5px;
+  background-color: #dcdcdc;
+  display: none;
+  text-transform: uppercase;
+}
+
+.fancybox {
+  text-decoration: none;
+  color: #000;
+}
+
 .corner-stamp {
   float: right;
   margin-top: 100px;
@@ -295,12 +303,12 @@
   width: 100%;  
 }
 
-.texttitle {
-  text-transform: uppercase;
+.textcontent {
+  font-family:'DIN Next W01 Regular';
 }
 
-.textcontent {
-  text-align: justify;
+.texttitle {
+  text-transform: uppercase;
 }
 
 .contactcontainer {
@@ -313,6 +321,7 @@
   padding-top: 25px;
   padding-left: 20px;
   background-color: #DADBDC;
+  font-family:'DIN Next W01 Regular';
 }
 
 .contact {
@@ -376,6 +385,7 @@
 
 .eventsingledesc {
   font-size: 13px;
+  font-family:'DIN Next W01 Regular';
 }
 
 .newsarchive {
@@ -446,6 +456,7 @@
 
 .newssingledesc {
   margin-bottom: 20px;
+  font-family:'DIN Next W01 Regular';
 }
 
 .newssingleimg img {
@@ -488,6 +499,7 @@
   margin-left: 10px;
   display: none;
   padding-bottom: 20px;
+  font-family:'DIN Next W01 Regular';
 }
 
 .isotope,
@@ -635,11 +647,6 @@
 
 .nav {
   width: auto;
-  right: 15px;
-}
-
-.nav a {
-  margin-right: -20px;
 }
 
 }
@@ -661,13 +668,6 @@
 
 @media only screen and (max-width: 508px) {
 
-  .nav {
-    width: 450px;
-  }
-
-  .nav a {
-    font-size: 14px;
-  }
 }
 
 @media only screen and (max-width: 490px) {
@@ -684,39 +684,11 @@
 
 @media only screen and (max-width: 473px) {
 
-  .nav {
-    width: auto;
+  .nav a {
+    font-size: 14px;
+    margin-left: 1px;
   }
 
-  #cartoonimg, #texteimg, #newsimg, #portraitimg, #kontaktimg {
-    background-size: 68px;
-    width: 68px;
-  }
-
-  #cartoonimgactive, #texteimgactive, #newsimgactive, #portraitimgactive, #kontaktimgactive {
-    background-size: 68px;
-    width: 68px;
-  }
-
-  #cartoonimg:hover, #cartoonimgactive {
-    background-position: -3px -35px;
-  }
-
-  #texteimg:hover,#texteimgactive {
-    background-position: 3px -40px;
-  }
-
-  #newsimg:hover, #newsimgactive {
-    background-position: 0px -38px;
-  }
-
-  #portraitimg:hover, #portraitimgactive {
-    background-position: 0px -36px;
-  }
-
-  #kontaktimg:hover, #kontaktimgactive {
-    background-position: 7px -38px;
-  }
 }
 
 @media only screen and (max-width: 470px) {

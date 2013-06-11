@@ -25,4 +25,16 @@ $(function(){
         var category = $(this).attr('title');
         $('#container').isotope({ filter: "." + category });
     });
+
+    $('.item').mouseenter(function() {
+        var $this = $(this);
+
+        $this.find('.imagetext').fadeIn();
+    });
+
+    $('.item').mouseleave(function() {
+        var $this = $(this);
+
+        $this.find('.imagetext').fadeOut();
+    });
 });

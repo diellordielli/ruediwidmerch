@@ -1,11 +1,11 @@
 {% extends "base.html" %}
 {% block nav_cartoon %}
     <div class="nav">
-        <a href="/"><div id="cartoonimgactive"></div></a>
-        <a href="/column"><div id="texteimg"></div></a>
-        <a href="/news"><div id="newsimg"></div></a>
-        <a href="/portrait"><div id="portraitimg"></div></a>
-        <a href="/contact"><div id="kontaktimg"></div></a>
+        <a href="/"><div id="cartoonimgactive">Cartoons</div></a>
+        <a href="/column"><div id="texteimg">Texte</div></a>
+        <a href="/news"><div id="newsimg">News</div></a>
+        <a href="/portrait"><div id="portraitimg">Portrait</div></a>
+        <a href="/contact"><div id="kontaktimg">Kontakt</div></a>
     </div>
 {% endblock %}
 {% block cartoons %}
@@ -20,20 +20,23 @@
             </div>
         </a>
         {% endif %}
-        {% for cartoon in cartoons %}
-            <div class="item image{{ cartoon.width }}-{{ cartoon.height }} {{ cartoon.category }}">
-                {% if cartoon.image %}
-                <a class="fancybox" title="{{ cartoon.category }} vom {{ cartoon.date|date:"d.F Y" }}</br>{{ cartoon.description }}" rel="group" href="{{ cartoon.image.url }}">
-                    <img src = "{{ cartoon.image.url }}">
-                </a>
-                {% endif %}
-            </div>
-        {% endfor %}
-
-        {% for category in categories %}
-            <div class="item category {{ category.name }}" title="{{ category.name }}">
-                {{ category.name }}
-            </div>
-        {% endfor %}
+            {% for cartoon in cartoons %}
+                <div class="item image{{ cartoon.width }}-{{ cartoon.height }} {{ cartoon.category }}">
+                    {% if cartoon.image %}
+                    <a class="fancybox" title="{{ cartoon.category }} vom {{ cartoon.date|date:"d.F Y" }}</br>{{ cartoon.description }}" rel="group" href="{{ cartoon.image.url }}">
+                        <img src = "{{ cartoon.image.url }}">
+                    <div class="imagetext">
+                        <b>{{ cartoon.category }}</b></br>
+                        {{ cartoon.date|date:"d. F Y" }}
+                    </div>
+                    </a>
+                    {% endif %}
+                </div>
+            {% endfor %}
+            {% for category in categories %}
+                <div class="item category {{ category.name }}" title="{{ category.name }}">
+                    {{ category.name }}
+                </div>
+            {% endfor %}
     </div>
 {% endblock %}
