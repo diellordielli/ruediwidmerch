@@ -10,6 +10,10 @@
     background-color: #FFF;
 }
 
+h4 {
+  text-transform: uppercase;
+}
+
 #title img {
     width: 270px;
 }
