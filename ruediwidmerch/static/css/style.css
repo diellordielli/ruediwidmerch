@@ -11,9 +11,14 @@
 }
 
 h4 {
-  font-size: 15px;
+  font-size: 16px;
   font-family:'Vialog LT W01 Light';
   text-transform: uppercase;
+}
+
+span {
+  font-family:'Bembo W01';
+  font-size: 16px;
 }
 
 #title img {
@@ -312,7 +317,7 @@ h4 {
 }
 
 .textcontent {
-font-family:'Bembo W01';
+  font-family:'Bembo W01';
 }
 
 .texttitle {
