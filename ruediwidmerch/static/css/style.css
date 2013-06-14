@@ -214,7 +214,7 @@ span {
 */
 
 #container {
-  top: 100px;
+  top: 107px;
 }
 
 .supernews {
@@ -262,7 +262,7 @@ span {
   position: relative;
   max-width: 325px;
   width: 100%;
-  left: 13px;
+  left: 4px;
   top: 15px;
 }
 
@@ -328,13 +328,14 @@ span {
   float: left;
   position: relative;
   max-width: 290px;
-  top: 100px;
+  top: 107px;
   width: 92%;
   height: 415px;
   padding-top: 25px;
   padding-left: 20px;
   background-color: #DADBDC;
   font-family:'Bembo W01';
+  left: 4px;
 }
 
 .contact {
@@ -347,8 +348,8 @@ span {
   margin-top: 100px;
   max-width: 480px;
   width: 100%;
-  left: 14px;
-  top: 5px;
+  left: 4px;
+  top: 10px;
 }
 
 .eventcontainer {
