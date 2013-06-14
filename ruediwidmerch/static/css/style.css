@@ -6,11 +6,13 @@
     margin-left: auto;
     margin-right: auto;
     height: auto;
-    font-family:'Andale$MonoW01-Regular';
+    font-family:'Vialog LT W01 Light';
     background-color: #FFF;
 }
 
 h4 {
+  font-size: 15px;
+  font-family:'Vialog LT W01 Light';
   text-transform: uppercase;
 }
 
@@ -232,7 +234,7 @@ h4 {
 .imagetext {
   position: relative;
   width: 100%;
-  top: -53px;
+  top: -45px;
   padding-top: 5px;
   background-color: #dcdcdc;
   display: none;
@@ -255,6 +257,8 @@ h4 {
   position: relative;
   max-width: 325px;
   width: 100%;
+  left: 13px;
+  top: 15px;
 }
 
 .archivecontainer {
@@ -338,6 +342,8 @@ font-family:'Bembo W01';
   margin-top: 100px;
   max-width: 480px;
   width: 100%;
+  left: 14px;
+  top: 5px;
 }
 
 .eventcontainer {
@@ -566,7 +572,7 @@ font-family:'Bembo W01';
 
 .navleft, .navright, .navleft2, .navright2 {
   position: relative;
-  top: 6px;
+  top: 3px;
   display: inline;
   font-size: 50px;
   font-weight: bold;
@@ -575,12 +581,12 @@ font-family:'Bembo W01';
 
 .navleft {
   position: relative;
-  left: 20px;
+  left: -10px;
 }
 
 .navright {
   position: relative;
-  right: 0px;
+  right: -10px;
 }
 
 @media only screen and (max-width: 926px) {
