@@ -9,13 +9,19 @@ from .portrait.models import Portrait
 
 
 def home(request):
-    cartoons = Cartoon.objects.order_by('ordering')
+    cartoons = list(Cartoon.objects.order_by('ordering'))
     categories = Category.objects.all()
+    cat_x_car = len(cartoons) / categories.count()
 
     try:
         featured = News.objects.get(featured=True)
     except News.DoesNotExist:
         featured = None
+
+    for i in range(0, categories.count()):
+        cartoons.insert((i+1)*cat_x_car, categories[i])
+
+    print cartoons
 
     return render(request, 'index.html', {
         'cartoons': cartoons,
