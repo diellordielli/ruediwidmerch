@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block nav_cartoon %}
+    <div class="nav">
+        <a href="/"><div id="cartoonimgactive">Cartoons</div></a>
+        <a href="/column"><div id="texteimg">Texte</div></a>
+        <a href="/news"><div id="newsimg">News</div></a>
+        <a href="/portrait"><div id="portraitimg">Portrait</div></a>
+        <a href="/contact"><div id="kontaktimg">Kontakt</div></a>
+    </div>
+{% endblock %}
+{% block cartoon_detail %}
+    {% include "cartoon_detail_ajax.html" %}
+{% endblock %}

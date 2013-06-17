@@ -40,3 +40,7 @@ class Cartoon(models.Model):
 
     def __unicode__(self):
         return u"%s %s" % (self.image,  self.category)
+
+    @models.permalink
+    def get_absolute_url(self):
+        return ('cartoon_detail', (), {'id': self.id})

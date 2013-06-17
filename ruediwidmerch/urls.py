@@ -15,6 +15,9 @@ urlpatterns = patterns('',
     # Home
     url(r'^$', 'ruediwidmerch.views.home', name='home'),
 
+    # Cartoon Detail
+    url(r'^cartoon/(?P<id>\d+)/$', 'ruediwidmerch.views.cartoon_detail', name='cartoon_detail'),
+
     # Texte
     url(r'^column/$', 'ruediwidmerch.views.column', name='column'),
 

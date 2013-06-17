@@ -1,5 +1,8 @@
 $(document).ready(function() {
     $(".fancybox").fancybox({
+
+        
+        type: 'ajax',
         helpers: {
             title: {
                 type: "under"

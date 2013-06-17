@@ -6,6 +6,10 @@
     <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/jquery.fancybox.css">
     <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/style.css">
     <link type="text/css" rel="stylesheet" href="http://fast.fonts.com/cssapi/8570429e-ca28-4be9-a4a4-e9b81d883afa.css"/>
+    <meta name="og:image" content="{{ STATIC_URL }}og_image.jpg" />
+
+    <!--{{ request.get_full_path }}-->
+    <!-- {% block ogimage %}http{% if request.is_secure %}s{% endif %}://{{ request.get_host }}{% endblock %} -->
 </head>
 <body>
     <div class ="page">
@@ -23,6 +27,10 @@
             </a>            
         </div>
         {% block nav_cartoon %}
+        {% endblock %}
+        {% block cartoon_detail %}
+        {% endblock %}
+        {% block cartoon_detail_ajax %}
         {% endblock %}
         {% block cartoons %}
         {% endblock %}

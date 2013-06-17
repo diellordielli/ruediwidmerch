@@ -30,6 +30,15 @@ def home(request):
     })
 
 
+def cartoon_detail(request, id):
+    cartoon = Cartoon.objects.get(id=id)
+
+    if request.is_ajax():
+        return render(request, 'cartoon_detail_ajax.html', {'cartoon': cartoon})
+    else:
+        return render(request, 'cartoon_detail.html', {'cartoon': cartoon})
+
+
 def column(request):
     columns = Column.objects.order_by('-date')
     newest = Column.objects.latest('date')

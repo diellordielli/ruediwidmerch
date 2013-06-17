@@ -579,6 +579,15 @@ span {
   right: -10px;
 }
 
+.cartoon_detail_ajax {
+  margin-top: 100px;
+  width: auto;
+}
+
+.ajaxtext {
+  width: 600px;
+}
+
 @media only screen and (max-width: 926px) {
   .eventall {
     position: relative;
