@@ -23,7 +23,7 @@
             {% for cartoon in cartoons %}
                 <div class="item image{{ cartoon.width }}-{{ cartoon.height }} {{ cartoon.category }}">
                     {% if cartoon.image %}
-                    <a class="fancybox" title="<h4>{{ cartoon.category }} vom {{ cartoon.date|date:"d.F Y" }}</h4> {{ cartoon.description }}" rel="group" href="{{ cartoon.image.url }}">
+                    <a class="fancybox" title="<h4>{{ cartoon.category }} vom {{ cartoon.date|date:"d.F Y" }}</h4> {{ cartoon.description }}" rel="group" href="{{ cartoon.get_absolute_url }}">
                         <img src = "{{ cartoon.image.url }}">
                     <div class="imagetext">
                         <b>{{ cartoon.category }}</b></br>
