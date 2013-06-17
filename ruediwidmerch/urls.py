@@ -21,9 +21,6 @@ urlpatterns = patterns('',
     # Textdetail
     url(r'^column/(?P<id>\d+)/$', 'ruediwidmerch.views.single_column', name='single_column'),
 
-    # Cartoon Detail
-    url(r'^cartoon/(?P<id>\d+)/$', 'ruediwidmerch.views.cartoon_detail', name='cartoon_detail'),
-
     # News
     url(r'^news/$', 'ruediwidmerch.views.news', name='news'),
 
