@@ -133,22 +133,6 @@ span {
   width: 100%;
 }
 
-.item.image1-1, .item.image2-1, .item.image3-1, .item.image4-1, .item.image1-1 img, .item.image2-1 img, .item.image3-1 img, .item.image4-1 img {
-  height: 110px;
-}
-
-.item.image1-2, .item.image2-2, .item.image3-2, .item.image4-2, .item.image1-2 img, .item.image2-2 img, .item.image3-2 img, .item.image4-2 img {
-  height: 230px;
-}
-
-.item.image1-3, .item.image2-3, .item.image3-3, .item.image4-3, .item.image1-3 img, .item.image2-3 img, .item.image3-3 img, .item.image4-3 img {
-  height: 340px;
-}
-
-.item.image1-4, .item.image2-4, .item.image3-4, .item.image4-4, .item.image1-4 img, .item.image2-4 img, .item.image3-4 img, .item.image4-4 img {
-  height: 470px;
-}
-
 .item.imagecorner {
   max-width: 470px;
   width: 100%;
