@@ -579,10 +579,9 @@ span {
   right: -10px;
 }
 
-.cartoon_detail_ajax {
+.cartoon_detail_ajax img {
   width: 100%;
   margin-top: 100px;
-  width: auto;
 }
 
 .ajaxtext {
