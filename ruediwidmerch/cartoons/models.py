@@ -20,12 +20,20 @@ class Cartoon(models.Model):
         ('4', '4'),
     )
 
+    IMAGE_HEIGHT = (
+        ('1', '1'),
+        ('2', '2'),
+        ('3', '3'),
+        ('4', '4'),
+    )
+
     description = models.TextField(blank=True)
     ordering = models.IntegerField()
     category = models.ForeignKey(Category, related_name="category", blank=True)
     date = models.DateTimeField()
     image = models.ImageField(upload_to="cartoons")
     width = models.CharField(max_length=20, choices=IMAGE_WIDTH)
+    height = models.CharField(max_length=20, choices=IMAGE_HEIGHT, blank=True)
 
     class Meta:
         verbose_name_plural = "Cartoons"
