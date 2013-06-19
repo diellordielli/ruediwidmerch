@@ -6,7 +6,7 @@
         <div class="ajaxtext">
             <h4>{{ cartoon.category }} vom {{ cartoon.date|date:"d.F Y" }}</h4>
             {{ cartoon.description }}
-            <iframe src="//www.facebook.com/plugins/like.php?href={{ request.build_absolute_uri|urlencode }}&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=false&amp;font&amp;colorscheme=light&amp;action=like&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:21px;" allowTransparency="true"></iframe>
+            <iframe src="//www.facebook.com/plugins/like.php?href={{ request.build_absolute_uri|urlencode }}&amp;send=false&amp;layout=standard&amp;width=400&amp;show_faces=false&amp;font&amp;colorscheme=light&amp;action=recommend&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:400px; height:35px;" allowTransparency="true"></iframe>
         </div>
     </div>
 {% endblock %}

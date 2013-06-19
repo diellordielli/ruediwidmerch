@@ -12,6 +12,9 @@ class Category(models.Model):
     def __unicode__(self):
         return u"%s" % (self.name)
 
+    def replace_dash(self):
+        return self.name.replace('-', '- ')
+
 
 class Cartoon(models.Model):
     IMAGE_WIDTH = (
