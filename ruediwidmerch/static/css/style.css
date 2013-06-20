@@ -589,14 +589,12 @@ span {
 }
 
 .cartoon_detail_ajax img {
-  width: 100%;
-  margin-top: 100px;
+  max-width: 100%;
 }
 
 .ajaxtext {
   font-family:'Vialog LT W01 Light';
-  max-width: 600px;
-  width: 100%;
+
 }
 
 @media only screen and (max-width: 926px) {
