@@ -294,7 +294,7 @@ span {
   position: relative;
   top: 98px;
   padding-left: 45px;
-  max-width: 430px;
+  max-width: 410px;
   width: 100%;
 }
 
@@ -563,7 +563,8 @@ span {
 .archiveouter {
   float: left;
   margin-top: 100px;
-  width: 470px;
+  max-width: 470px;
+  width: 100%;
   height: 620px;
   overflow: hidden;
 }
@@ -596,6 +597,17 @@ span {
   font-family:'Vialog LT W01 Light';
   max-width: 600px;
   width: 100%;
+}
+
+@media only screen and (max-width: 926px) {
+  .regionwhite {
+    padding-left: 0px;
+    left: 27%;
+  }
+
+  .archiveall {
+    margin: 0 auto;
+  }
 }
 
 @media only screen and (max-width: 926px) {
@@ -736,10 +748,4 @@ span {
   .navleft2, .navright2 {
     font-size: 35px;
   }
-
-  .archiveouter {
-    max-width: 325px;
-    width: 100%;
-  }
-
 }
