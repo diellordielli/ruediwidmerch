@@ -10,6 +10,8 @@ $(document).ready(function() {
             type: 'ajax',
             index: $group.index(this),
             autoSize: false,
+            autoWidth: false,
+            autoHeight: true,
             afterLoad: function() {
                 var imgDimensions = getImageDimensions(this.element.find('img').attr('src'));
 

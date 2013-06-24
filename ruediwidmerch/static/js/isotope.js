@@ -23,9 +23,10 @@ $(function(){
 
     $('.item.category').click(function(){
         var category = $(this).attr('title');
-        
+
         $('#container').isotope({ filter: "." + category });
         $('#container').data('filter', category);
+
     });
 
     $('.item').mouseenter(function() {
