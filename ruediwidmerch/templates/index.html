@@ -23,7 +23,7 @@
 
         {% for cartoon in cartoons %}
             {% if cartoon.image %}
-                <div class="item image{{ cartoon.width }}-{{ cartoon.height }} {{ cartoon.category }} cartoon">
+                <div class="item image{{ cartoon.width }}-{{ cartoon.height }} {{ cartoon.category|slugify }} cartoon">
                     {% if cartoon.image %}
                     <a class="fancybox" href="{{ cartoon.get_absolute_url }}" rel="group">
                         <img src = "{{ cartoon.image.url }}">
@@ -35,7 +35,7 @@
                     {% endif %}
                 </div>
             {% else %}
-                <div class="item category {{ cartoon.name }}" title="{{ cartoon.name }}">
+                <div class="item category {{ cartoon.name|slugify }}" title="{{ cartoon.name|slugify }}">
                     {{ cartoon.name }}
                 </div>
             {% endif %}
