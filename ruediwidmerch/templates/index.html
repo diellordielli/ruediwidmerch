@@ -9,7 +9,7 @@
     </div>
 {% endblock %}
 {% block cartoons %}
-    <div id="container">
+    <div id="container" data-filter="all">
         {% if featured.first_image %}
         <a href="/news">
             <div class="item image4-4">
@@ -36,7 +36,7 @@
                 </div>
             {% else %}
                 <div class="item category {{ cartoon.name|slugify }}" title="{{ cartoon.name|slugify }}">
-                    {{ cartoon.name }}
+                    {{ cartoon.name }}<div class="categoryclose">✗</div>
                 </div>
             {% endif %}
         {% endfor %}
