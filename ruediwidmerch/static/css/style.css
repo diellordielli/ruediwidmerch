@@ -597,8 +597,11 @@ span {
 }
 
 .categoryclose {
-  display: none;
+  position: absolute;
+  top: 0px;
+  right: 0px;
   color: white;
+  display: none;
 }
 
 @media only screen and (max-width: 926px) {
